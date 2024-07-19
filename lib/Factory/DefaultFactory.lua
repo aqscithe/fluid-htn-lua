@@ -1,5 +1,5 @@
 -- DefaultFactory.lua
-local IFactory = require("IFactory")
+local IFactory = require("lib.Factory.IFactory")
 
 local DefaultFactory = setmetatable({}, IFactory)
 DefaultFactory.__index = DefaultFactory

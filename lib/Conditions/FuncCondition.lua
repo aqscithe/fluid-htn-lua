@@ -1,5 +1,5 @@
 -- Import the ICondition interface
-local ICondition = require("ICondition")
+local ICondition = require("lib.Conditions.ICondition")
 
 -- Define the FuncCondition class
 local FuncCondition = setmetatable({}, ICondition)

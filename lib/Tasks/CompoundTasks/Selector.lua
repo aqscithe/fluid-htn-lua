@@ -1,6 +1,6 @@
 -- Selector.lua
-local CompoundTask = require("CompoundTask")
-local DecompositionStatus = require("DecompositionStatus")
+local CompoundTask = require("lib.Tasks.CompoundTasks.CompoundTask")
+local DecompositionStatus = require("lib.Tasks.CompoundTasks.DecompositionStatus")
 local ConsoleColor = { Red = "red", Green = "green", Blue = "blue", DarkBlue = "darkblue" }
 
 local Selector = setmetatable({}, CompoundTask)

@@ -48,6 +48,7 @@ function Planner:TryFindNewPlan(domain, ctx, decompositionStatus)
     local lastPartialPlanQueue = self:PrepareDirtyWorldStateForReplan(ctx)
     local isTryingToReplacePlan = #ctx.PlannerState.Plan > 0
 
+    local newPlan = nil  -- Define newPlan before its usage
     decompositionStatus = domain:FindPlan(ctx, newPlan)
 
     if self:HasFoundNewPlan(decompositionStatus) then
@@ -59,6 +60,7 @@ function Planner:TryFindNewPlan(domain, ctx, decompositionStatus)
 
     return isTryingToReplacePlan
 end
+
 
 function Planner:PrepareDirtyWorldStateForReplan(ctx)
     if not ctx.IsDirty then

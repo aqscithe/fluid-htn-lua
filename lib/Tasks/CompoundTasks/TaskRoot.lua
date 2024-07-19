@@ -1,5 +1,5 @@
 -- TaskRoot.lua
-local Selector = require("Selector")
+local Selector = require("lib.Tasks.CompoundTasks.Selector")
 
 local TaskRoot = setmetatable({}, Selector)
 TaskRoot.__index = TaskRoot

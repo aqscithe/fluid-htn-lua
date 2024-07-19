@@ -1,6 +1,6 @@
 -- CompoundTask.lua
-local ICompoundTask = require("ICompoundTask")
-local DecompositionStatus = require("DecompositionStatus")
+local ICompoundTask = require("lib.Tasks.CompoundTasks.ICompoundTask")
+local DecompositionStatus = require("lib.Tasks.CompoundTasks.DecompositionStatus")
 local ConsoleColor = { White = "white", DarkGreen = "darkgreen", DarkRed = "darkred", Green = "green", Red = "red" } -- Simulating ConsoleColor
 
 local CompoundTask = setmetatable({}, ICompoundTask)

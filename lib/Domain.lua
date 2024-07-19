@@ -157,6 +157,7 @@ function Domain:OnPausedPartialPlan(ctx, plan, status)
         if not plan then
             status = kvp.Task:Decompose(ctx, kvp.TaskIndex, plan)
         else
+            local subPlan = nil
             status = kvp.Task:Decompose(ctx, kvp.TaskIndex, subPlan)
             if self:HasDecompositionSucceeded(status) then
                 self:EnqueueToExistingPlan(plan, subPlan)
@@ -175,6 +176,7 @@ function Domain:OnPausedPartialPlan(ctx, plan, status)
 
     return status
 end
+
 
 -- Enqueue sub-plan to the existing plan
 function Domain:EnqueueToExistingPlan(plan, subPlan)

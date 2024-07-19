@@ -1,5 +1,5 @@
 -- IDecomposeAll.lua
-local ICompoundTask = require("ICompoundTask")
+local ICompoundTask = require("lib.Tasks.CompoundTasks.ICompoundTask")
 
 local IDecomposeAll = setmetatable({}, ICompoundTask)
 IDecomposeAll.__index = IDecomposeAll

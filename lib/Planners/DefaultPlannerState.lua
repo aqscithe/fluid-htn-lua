@@ -1,5 +1,5 @@
 -- DefaultPlannerState.lua
-local IPlannerState = require("IPlannerState")
+local IPlannerState = require("lib.Planners.IPlannerState")
 local DefaultPlannerState = setmetatable({}, IPlannerState)
 DefaultPlannerState.__index = DefaultPlannerState
 

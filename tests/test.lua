@@ -1,8 +1,3 @@
--- Add the project root directory to package.path in order to find setup
-package.path = package.path .. ";../?.lua"
-
-require("../setup")
-
 local EffectType = require("lib.Effects.EffectType")
 
 local function applyEffect(effectType)

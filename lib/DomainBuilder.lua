@@ -1,6 +1,6 @@
 -- DomainBuilder.lua
 local BaseDomainBuilder = require("BaseDomainBuilder")
-local DefaultFactory = require("DefaultFactory")
+local DefaultFactory = require("lib.Factory.DefaultFactory")
 
 local DomainBuilder = {}
 DomainBuilder.__index = DomainBuilder

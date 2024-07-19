@@ -1,6 +1,6 @@
 -- Slot.lua
 local ITask = require("lib.Tasks.ITask")
-local DecompositionStatus = require("lib.Tasks.CompoundTasks.DecompositionStatus").DecompositionStatus
+local DecompositionStatus = require("lib.Tasks.CompoundTasks.DecompositionStatus")
 local ConsoleColor = { White = "white", Green = "green", Red = "red" } -- Simulating ConsoleColor
 
 local Slot = setmetatable({}, ITask)

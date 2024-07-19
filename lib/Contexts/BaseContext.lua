@@ -1,7 +1,8 @@
 -- Import necessary modules
-local IContext = require("IContext")
-local ContextState = IContext.ContextState
-local PartialPlanEntry = IContext.PartialPlanEntry
+local ContextState = require("lib.Contexts.IContext").ContextState
+local PartialPlanEntry = require("lib.Contexts.IContext").PartialPlanEntry
+
+local EffectType = require("lib.Effects.EffectType")
 
 -- Define the BaseContext class
 local BaseContext = {}

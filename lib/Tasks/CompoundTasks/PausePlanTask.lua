@@ -1,6 +1,6 @@
 -- PausePlanTask.lua
 local ITask = require("lib.Tasks.ITask")
-local DecompositionStatus = require("DecompositionStatus")
+local DecompositionStatus = require("lib.Tasks.CompoundTasks.DecompositionStatus")
 local ConsoleColor = { Green = "green" } -- Simulating ConsoleColor
 
 local PausePlanTask = setmetatable({}, ITask)
